@@ -26,4 +26,21 @@
  */
 export function calculateGrade(score, hasExtraCredit) {
   // Your code here
+  if (hasExtraCredit && score <= 95) {
+    score += 5;
+  }
+
+  if (score < 0 || score > 100) {
+    return "INVALID"
+  } else if (score <= 100 && score > 89) {
+    return "A"
+  } else if (score <= 89 && score > 79) {
+    return "B"
+  } else if (score <= 79 && score > 69) {
+    return "C"
+  } else if (score <= 69 && score > 59) {
+    return "D"
+  } else {
+    return "F"
+  }
 }
