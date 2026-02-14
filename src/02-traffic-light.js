@@ -23,7 +23,7 @@
  */
 export function getTrafficAction(color) {
   // Your code here
-  switch (color.toLowerCase()) {
+  switch (color.toLowerCase()) { 
     case "green":
       return "GO"
       break;
